@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ava Lindqvist — Explorer, Photographer & Speaker</title>
+  <meta name="description" content="Official website of Ava Lindqvist — award-winning explorer, photographer and keynote speaker. Story, achievements, photo gallery and contact.">
+  <meta name="theme-color" content="#0b1015">
+  <link rel="canonical" href="https://dev-pqn.github.io/ava-lindqvist/">
+
+  <!-- og -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Ava Lindqvist — Explorer, Photographer & Speaker">
+  <meta property="og:description" content="Stories from the quiet edges of the world.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237fe0c9'/%3E%3Ctext x='50%25' y='56%25' font-family='Georgia' font-size='34' fill='%23052620' text-anchor='middle' dominant-baseline='middle'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ava Lindqvist",
+    "jobTitle": "Explorer, Photographer & Speaker",
+    "address": { "@type": "PostalAddress", "addressLocality": "Oslo", "addressCountry": "NO" },
+    "sameAs": ["https://instagram.com/", "https://youtube.com/", "https://linkedin.com/"]
+  }
+  </script>
+</head>
+<body>
+  <div class="progress" aria-hidden="true"></div>
+
+  <header class="nav" id="top">
+    <a href="#home" class="logo" data-bind="name">Ava Lindqvist</a>
+    <nav aria-label="Main">
+      <button class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span></button>
+      <ul id="menu">
+        <li><a href="#story">Story</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact" class="nav-cta">Get in touch</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- hero -->
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <p class="eyebrow reveal" data-bind="role"></p>
+        <h1 class="reveal"><span data-bind="first"></span><br><em data-bind="last"></em></h1>
+        <p class="lead reveal" data-bind="tagline"></p>
+        <div class="hero-actions reveal">
+          <a href="#story" class="btn btn-primary">Read my story</a>
+          <a href="#gallery" class="btn btn-ghost">View gallery</a>
+        </div>
+        <ul class="socials reveal" data-list="socials" aria-label="Social media"></ul>
+      </div>
+      <figure class="hero-media reveal">
+        <img id="hero-img" alt="" fetchpriority="high">
+        <figcaption><span class="dot"></span><span data-bind="location"></span></figcaption>
+      </figure>
+      <a href="#story" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- stats -->
+    <section class="stats" aria-label="Highlights">
+      <div class="stats-grid" data-list="stats"></div>
+    </section>
+
+    <!-- story -->
+    <section class="story" id="story">
+      <figure class="story-media reveal"><img id="about-img" alt="" loading="lazy"></figure>
+      <div class="story-text">
+        <p class="eyebrow reveal">My story</p>
+        <h2 class="reveal" data-bind="aboutTitle"></h2>
+        <div data-list="aboutParagraphs"></div>
+      </div>
+    </section>
+
+    <!-- timeline -->
+    <section class="journey" id="journey">
+      <header class="section-head">
+        <p class="eyebrow reveal">The journey</p>
+        <h2 class="reveal">Moments that shaped me</h2>
+      </header>
+      <div class="timeline-wrap">
+        <span class="timeline-line" aria-hidden="true"><span class="timeline-fill"></span></span>
+        <ol class="timeline" data-list="timeline"></ol>
+      </div>
+    </section>
+
+    <!-- achievements -->
+    <section class="achievements" id="achievements">
+      <header class="section-head">
+        <p class="eyebrow reveal">Recognition</p>
+        <h2 class="reveal">Awards &amp; achievements</h2>
+      </header>
+      <div class="award-grid" data-list="achievements"></div>
+      <div class="press reveal">
+        <p>As featured in</p>
+        <ul data-list="press"></ul>
+      </div>
+    </section>
+
+    <!-- gallery -->
+    <section class="gallery" id="gallery">
+      <header class="section-head">
+        <p class="eyebrow reveal">Portfolio</p>
+        <h2 class="reveal">Through my lens</h2>
+      </header>
+      <div class="filters reveal" role="tablist" aria-label="Filter gallery"></div>
+      <div class="masonry" data-list="gallery"></div>
+    </section>
+
+    <!-- testimonials -->
+    <section class="quotes" aria-label="Testimonials">
+      <div class="quote-track" data-list="testimonials"></div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+      <div class="contact-card reveal">
+        <div class="contact-info">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's create something <em>together</em></h2>
+          <p data-bind="contactIntro"></p>
+          <ul class="contact-list">
+            <li><span class="ci-label">Email</span><a id="c-email"></a></li>
+            <li><span class="ci-label">Phone</span><a id="c-phone"></a></li>
+            <li><span class="ci-label">Studio</span><span data-bind="contactLocation"></span></li>
+          </ul>
+          <ul class="socials socials-light" data-list="socials" aria-label="Social media"></ul>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <label>Your name<input name="name" required autocomplete="name"></label>
+          <label>Email<input name="email" type="email" required autocomplete="email"></label>
+          <label>Topic
+            <select name="topic">
+              <option>Speaking engagement</option>
+              <option>Photography commission</option>
+              <option>Press &amp; media</option>
+              <option>Something else</option>
+            </select>
+          </label>
+          <label>Message<textarea name="message" rows="4" required></textarea></label>
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <p class="form-note" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> <span data-bind="name"></span>. Concept design, fictional persona. Photos: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>.</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <!-- lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <button class="lb-close" aria-label="Close">×</button>
+    <button class="lb-prev" aria-label="Previous image">‹</button>
+    <figure><img alt=""><figcaption></figcaption></figure>
+    <button class="lb-next" aria-label="Next image">›</button>
+  </div>
+
+  <script src="content.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
